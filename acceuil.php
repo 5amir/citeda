@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <link rel="shortcut icon" href="logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="acceuil.css">
@@ -27,6 +28,140 @@ catch (Exception $e)
 die('Erreur : ' . $e->getMessage());
 }
 
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <style>
+        header{
+        top: 0;
+    }
+    .haut{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(156, 33, 33);
+        color: white;
+    }
+    h1{
+        margin: auto;
+    }
+    .navv ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navv li{
+        height: 22px;
+        padding: 5px;
+        background-color: rgb(176, 250, 5);
+        color: black;
+        list-style-type: none;
+    }
+    
+    .navv li a{
+        text-decoration: none;
+        margin: auto;
+        font-weight: bold;
+    }
+
+    a:hover{
+        background-color: red;
+        color: white;
+        
+    }
+    .container {
+            background:linear-gradient(250deg, #8EC5FC 0%, #E0C3FC 100%);    
+            display: flex;
+            flex-direction:column;
+            gap:50px;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .formulaire {
+            width: 500px;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        
+
+        select {
+            width: 200px;
+            margin-left: 20px;
+            border:none;
+            outline:none;
+            border-radius:20px;
+            text-align:center;
+            padding:3px;
+            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .inp{
+            width:100px; margin-left: 20px;
+            border:none;
+            outline:none;
+            border-radius:20px;
+            text-align:center;
+            padding:3px;
+            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5);
+        
+        }
+
+        .ligne {
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bas {
+            margin: 20px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content:center;
+        }
+        button{
+            height: 30px;
+            background-color: green;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+            border:none;
+        }
+        .titre{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .supp{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+        .clr{
+            background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #000000 100%), conic-gradient(red, yellow, lime, aqua, blue, fuchsia, red);
+            background-blend-mode: color-dodge, normal;;
+        }
+        .info{
+            background:linear-gradient(250deg, #8EC5FC 0%, #E0C3FC 100%);
+            padding:30px;
+        }
+    </style>
+</head>
+<body>
+<?php
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
  include"header.php";
 ?>
 
@@ -40,6 +175,7 @@ die('Erreur : ' . $e->getMessage());
 
 <div class="container">
 
+<<<<<<< HEAD
 <?php
     if (isset($_GET['enr']) && $_GET['enr']=="yes") {
         ?>
@@ -62,6 +198,9 @@ die('Erreur : ' . $e->getMessage());
 ?>
 
      <form method="post" action="traitEng.php">
+=======
+     <form method="post" action="auth.php">
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
 
         
         <div class="formulaire">
@@ -74,6 +213,7 @@ die('Erreur : ' . $e->getMessage());
                 
                 <div class="ligne">
                     <label>Imprimante </label>
+<<<<<<< HEAD
                     <select name="imprimante" >
                     <?php
                                 $reqmat = $bdd->query('SELECT * FROM imprimente');
@@ -85,6 +225,12 @@ die('Erreur : ' . $e->getMessage());
                                 }
                                 $reqmat->closeCursor();
                             ?>
+=======
+                    <select name="Imprimante" id="">
+                    <option ></option>
+                        <option value="">Black jack</option>
+                        <option value="">HP</option>
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
                     </select>
                 </div>
                 <hr>
@@ -119,14 +265,21 @@ die('Erreur : ' . $e->getMessage());
                 
                 <hr>
                 <div class="btn">
+<<<<<<< HEAD
                     <button class="btn-enr" name="enregistrer">Enregistrer</button>
+=======
+                    <button class="btn2" name="enregistrer">Enregistrer</button>
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
                 </div>
             </div>
         </div>
     </form>
+<<<<<<< HEAD
     <div>
         <a href="logout.php"><button class="btn-dec">Se deconnecter</button></a>
     </div>
+=======
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
     </div>
 
 </body>

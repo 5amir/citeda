@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Se connecter</title>
+=======
+    <title>Auth</title>
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
 
     <style>
         body {
@@ -79,6 +83,7 @@
 
 <body>
 <?php  
+<<<<<<< HEAD
 session_start();
 // Vérifier si l'utilisateur est connecté
 if (isset($_SESSION['id'])) {
@@ -87,6 +92,10 @@ if (isset($_SESSION['id'])) {
 }
 
      if (isset($_GET['error'])) {
+=======
+     if (isset($_GET['error'])) {
+        
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
         ?>
           <div style="background:whitesmoke; padding:30px;">
             <h3 style="color:red;">Information incorrecte</h3>
@@ -102,7 +111,11 @@ if (isset($_SESSION['id'])) {
             <center class="titre">
                 <img src="logo.jpg" width="150" height="150" alt="">
                 <div style="width:100%;">
+<<<<<<< HEAD
                     <center><h3 style="font-size:30px;">CITeDA</h3></center>
+=======
+                    <center><h3 style="font-size:30px;">CITeda</h3></center>
+>>>>>>> 0b79c80bc5dda037b66893f2b6cb1a172a370b3d
                 </div>
             </center>
             <div>
