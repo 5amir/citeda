@@ -17,7 +17,7 @@ if ($profil=="PDG") {
                 <li><a href="acceuil.php">Acceuil</a></li>
                 <li><a href="inscription.php">Inscription</a></li>
                 <li><a href="imprimante.php">Imprimantes</a></li>
-                <li><a href="">Bilan</a></li>
+                <li><a href="bilan.php">Bilan</a></li>
             </ul>
             <hr>
         </div>
