@@ -1,0 +1,106 @@
+.plage{
+    display: flex;
+    gap: 10px;
+    background:linear-gradient(250deg, #8EC5FC 0%, #E0C3FC 100%);
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.gauche{
+    flex: 3;
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.formulaire {
+    width: 400px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+label {
+    font-weight: bold;
+}
+
+
+
+.inp {
+    width: 200px;
+    margin-left: 20px;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    text-align:center;
+    padding:3px;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ligne {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bas {
+    margin: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+}
+button{
+    height: 30px;
+    background-color: green;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+}
+
+.droite{
+    flex: 9;
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7);
+    height: 335px;
+    overflow-y: scroll;
+}
+
+.lab{
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    padding:0 20px; 
+}
+.corp{
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+
+.formu{
+    margin: 20px 0;
+}
+
+.bas-btn-sup{
+    margin:0;
+    border:none;
+    background-color: red;
+    color:white;
+    cursor:pointer;
+}
+
+    
+    
