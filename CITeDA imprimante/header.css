@@ -1,0 +1,31 @@
+header{
+    top: 0;
+}
+.haut{
+    display: flex;
+    background-color: rgb(156, 33, 33);
+    color: white;
+}
+h1{
+    margin: auto;
+}
+.navv ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navv li{
+    height: 22px;
+    padding: 5px;
+    background-color: rgb(176, 250, 5);
+    color: black;
+    list-style-type: none;
+}
+
+.navv li a{
+    text-decoration: none;
+    margin: auto;
+    font-weight: bold;
+}
+

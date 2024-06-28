@@ -1,0 +1,54 @@
+C'est une application de gestion d'imprimante
+______________________________________________
+
+Note:
+* Le dossier contient un fichier cideta.sql que vous devrier importer dans votre base
+de donneé que vous aurez nommeé citeda également
+
+* La premier des chose a faire après l'importation de la base de donneé est de verifier
+les imprmantes présentes dans la page imprimantes
+
+* Ensuite se rende dans la page de bilan qui sera normalement vide, et réinitialiser le 
+compteur de chaque imprmante presente dans la liste deroulante des imprimantes.
+
+* Les enregistrements peuvent alors commencer dans la page d'acceuil, ansi que la gestion des 
+utilisateur et celle des imprimantes 
+
+* Les deux utilisateur par defaut et leur mot de passe sont § fanou@gmail.com / azerty (PDG) et celeste@gmail.com / 12345 (sécrétaire) 
+
+* La page d'acceuil qui est la page d'enregistrement est la seule page à laquel le secretaire
+peut avoir accès
+
+
+Comprenez aue:
+
+* Pour les enregistrements des index dans la base de donneé
+
+ - Quand le user selectionne l'imprimante en question, les derniers index enrégistrés sont 
+ afficher dans les champs correspondantes sans avoir à réactualiser la page
+ - Le user ne peut non plus entrer un index nouveau inferieur au précédent, donc peut revalider
+ l'ancien index 
+ - Une fois le formulaire d'enregistrement soumis, un message de succès est afficher
+
+* Pour la page des utilisateurs
+
+ - Vous pouviez ajoutez ou supprimer un utilisateur si vous etes connecter 
+ en tant que pdg. 
+
+* Pour la page des imprimantes 
+
+ - Vous pouviez ajouter, modifier , supprimer une imprimante a votre guise
+
+* Pour la page de bilan 
+
+ - Vous allez voir tout votre historique bien detaillé au point ou vous allez 
+ voir pour chaque enrégistrement, quel était l'index dernier,actuel, le nombre 
+ de copie que cela fait , la somme et le total 
+ 
+ - Vous pouvier également trier les resultats par imprimantes et dans une fourchette
+ de date 
+
+ - Le trie se passe également de façon automatique sans avoir a réactualiser la page
+
+ - (Index_nouveau - Index_dernier) = nombre de copie faite d'ou les trois place dans chaque
+ cellule du tableau 
